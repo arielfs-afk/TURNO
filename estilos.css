@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,900;1,600&family=Jost:wght@400;500;600;700&display=swap');
+
+:root {
+  --negro-calido: #18130f;
+  --panel: #251d16;
+  --crema: #f1e6d3;
+  --rojo: #ab3b26;
+  --azul: #35566c;
+  --mostaza: #c1912f;
+
+  --display: 'Fraunces', serif;
+  --cuerpo: 'Jost', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--negro-calido);
+  color: var(--crema);
+  font-family: var(--cuerpo);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+.contenedor {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.seccion {
+  padding: 5rem 0;
+  border-bottom: 1px solid rgba(241, 230, 211, 0.12);
+}
+
+.etiqueta {
+  font-family: var(--cuerpo);
+  font-weight: 600;
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--mostaza);
+  margin-bottom: 0.8rem;
+}
+
+h1, h2, h3, .titulo {
+  font-family: var(--display);
+  font-weight: 900;
+  line-height: 1.05;
+}
+
+h1 {
+  font-size: clamp(2.6rem, 9vw, 4.5rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 6vw, 2.6rem);
+  color: var(--crema);
+}
+
+h2 em, h1 em {
+  font-style: italic;
+  font-weight: 600;
+  color: var(--rojo);
+}
+
+p {
+  font-size: 1.05rem;
+  max-width: 34rem;
+}
+
+.hero {
+  min-height: 90svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+  border-bottom: 4px solid var(--rojo);
+}
+
+.hero p {
+  color: var(--crema);
+  opacity: 0.85;
+  font-size: 1.15rem;
+}
+
+/* sello circular, guiño a la placa de barbería sin ser un logo genérico */
+.sello {
+  width: 4.5rem;
+  height: 4.5rem;
+  border: 2px solid var(--mostaza);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--cuerpo);
+  font-weight: 700;
+  font-size: 0.7rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--mostaza);
+}
+
+.boton {
+  display: inline-block;
+  align-self: flex-start;
+  background: var(--rojo);
+  color: var(--crema);
+  border: none;
+  font-family: var(--cuerpo);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  font-size: 1rem;
+  padding: 0.9rem 2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.boton:hover { background: var(--mostaza); color: var(--negro-calido); }
+
+.boton-secundario {
+  background: transparent;
+  border: 2px solid var(--azul);
+  color: var(--crema);
+}
+
+.boton-secundario:hover {
+  background: var(--azul);
+  color: var(--crema);
+}
+
+/* tarjetas de señal: bloques de opción para el chequeo interactivo */
+.opciones {
+  display: grid;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.opcion {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: var(--panel);
+  border: 2px solid transparent;
+  color: var(--crema);
+  font-family: var(--cuerpo);
+  font-size: 1rem;
+  padding: 1rem 1.2rem;
+  cursor: pointer;
+}
+
+.opcion:hover {
+  border-color: var(--mostaza);
+}
+
+.opcion.marcada {
+  border-color: var(--rojo);
+  background: rgba(171, 59, 38, 0.18);
+}
+
+.resultado {
+  display: none;
+  margin-top: 2.5rem;
+  padding: 1.8rem;
+  background: var(--panel);
+  border-left: 4px solid var(--azul);
+}
+
+.resultado.visible { display: block; }
+
+.linea-ayuda {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid rgba(241, 230, 211, 0.15);
+}
+
+.linea-ayuda:last-child { border-bottom: none; }
+
+.linea-ayuda .numero {
+  font-family: var(--display);
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: var(--mostaza);
+  white-space: nowrap;
+}
+
+footer {
+  padding: 3rem 0;
+  font-size: 0.9rem;
+  opacity: 0.7;
+}

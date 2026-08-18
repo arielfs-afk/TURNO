@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Turno</title>
+<link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<section class="hero contenedor">
+  <div class="sello">Turno</div>
+  <h1>¿Todo bien,<br>en serio?</h1>
+  <p>Hay charlas que salen más fáciles con la máquina de afeitar al lado que en un consultorio. Turno es ese rato — un espacio para hablar de lo que no se habla: la plata que no alcanza, la presión de bancar todo solo, las noches en que no sabés bien qué te pasa.</p>
+  <a href="#chequeo" class="boton">Ver qué podés hacer</a>
+</section>
+
+<section class="seccion contenedor">
+  <p class="etiqueta">Por qué esto existe</p>
+  <h2>No sos el único al que no le cierran las cuentas.</h2>
+  <p>En 2025 se murieron por suicidio más varones jóvenes en Argentina que nunca antes. La mayoría nunca había pisado un consultorio ni le había contado a nadie lo que le pasaba. No porque no les importara — porque nadie les enseñó cómo se hace.</p>
+  <p>Se supone que un varón banca todo, no se queja, sale adelante solo. El problema es que hoy conseguir laburo, pagar lo que se debe o armar un proyecto de vida está más difícil que nunca. Y ese mandato de "aguantátela solo" no se movió ni un poco.</p>
+  <p>Turno nace para meterse justo ahí: en la barbería, en el club, en la charla de vestuario — donde igual ya estás hablando de todo, menos de esto.</p>
+</section>
+
+<section class="seccion contenedor" id="chequeo">
+  <p class="etiqueta">Un chequeo rápido</p>
+  <h2>¿Con cuáles de estas te re identificás?</h2>
+  <p>No hace falta marcar todas. Ni ninguna en particular. Es solo para que veas que lo que te pasa tiene nombre y le pasa a un montón de gente.</p>
+
+  <div class="opciones" id="listaOpciones">
+    <button type="button" class="opcion" data-opcion="1">Estoy más caliente que de costumbre, salto por cualquier boludez.</button>
+    <button type="button" class="opcion" data-opcion="2">Dejé de juntarme con gente que antes veía seguido.</button>
+    <button type="button" class="opcion" data-opcion="3">Tomo, fumo o juego más de lo que debería para bajar un cambio.</button>
+    <button type="button" class="opcion" data-opcion="4">Ando haciendo cosas al límite, medio al pedo, medio arriesgadas.</button>
+    <button type="button" class="opcion" data-opcion="5">Las cuentas no cierran y siento que no puedo con nada de esto.</button>
+    <button type="button" class="opcion" data-opcion="6">No tengo con quién hablar de esto en serio, ni sabría cómo arrancar.</button>
+  </div>
+
+  <button type="button" id="botonVer" class="boton boton-secundario" style="margin-top: 1.8rem;" disabled>Mostrame qué puedo hacer</button>
+
+  <div class="resultado" id="resultado">
+    <p><strong>No es que estés mal de la cabeza. Y no sos ninguna "generación de cristal".</strong> Es que te tocó bancar una mochila pesada, y en algún momento eso pesa en el cuerpo, en el humor o en la cabeza. No es señal de que sos poca cosa — es señal de que necesitás hablar con alguien, y cuanto antes, mejor. No hace falta esperar a que sea insoportable.</p>
+    <p>No tenés que tener el discurso armado ni saber bien qué decir. Con marcar y arrancar la charla alcanza. Las líneas de abajo son gratis, anónimas, y del otro lado hay gente formada para esto, no un contestador.</p>
+  </div>
+</section>
+
+<section class="seccion contenedor">
+  <p class="etiqueta">Líneas para hablar ya</p>
+  <h2>Marcá. Es gratis y es anónimo.</h2>
+
+  <div class="linea-ayuda">
+    <span>Centro de Asistencia al Suicida — de 8 a 24hs, todos los días</span>
+    <span class="numero">135</span>
+  </div>
+  <div class="linea-ayuda">
+    <span>Mismo centro, desde cualquier parte del país</span>
+    <span class="numero">0800-345-1435</span>
+  </div>
+  <div class="linea-ayuda">
+    <span>Salud Mental Provincia de Buenos Aires — las 24hs</span>
+    <span class="numero">0800-888-3364</span>
+  </div>
+  <div class="linea-ayuda">
+    <span>Acompañamiento en salud mental, Provincia de Buenos Aires</span>
+    <span class="numero">0800-222-5462</span>
+  </div>
+
+  <p style="margin-top: 2rem;">Si estás en peligro ahora mismo, no esperes: llamá a una de estas líneas o al 911.</p>
+</section>
+
+<section class="seccion contenedor">
+  <p class="etiqueta">Esto no termina en una web</p>
+  <h2>Esto también se está llevando a barberías y clubes de barrio.</h2>
+  <p>Porque ahí es donde los pibes ya están hablando de todo, sin darse cuenta. La idea es que quien esté del otro lado de la tijera o en el vestuario del club sepa leer una señal y sostener una charla, en vez de dejarla pasar.</p>
+</section>
+
+<footer class="contenedor">
+  <p>Turno — un espacio para hablar antes de que sea tarde.</p>
+</footer>
+
+<script src="turno.js"></script>
+</body>
+</html>
